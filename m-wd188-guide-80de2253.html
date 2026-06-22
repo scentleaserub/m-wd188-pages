@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>再访 · wd188 杂志专题</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background-color: #f4f0eb;
+            color: #2e2a26;
+            line-height: 1.7;
+        }
+
+        /* 深色头图 hero */
+        .hero {
+            background: linear-gradient(145deg, #101214 0%, #1f1e24 70%, #2a2733 100%);
+            padding: 5rem 2rem 4rem 2rem;
+            text-align: center;
+            border-bottom: 4px solid #c9a46c;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -40%;
+            left: -10%;
+            width: 130%;
+            height: 80%;
+            background: radial-gradient(circle at 30% 30%, rgba(201, 164, 108, 0.06) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .hero h1 {
+            font-size: 3.2rem;
+            font-weight: 400;
+            letter-spacing: 2px;
+            color: #e8ddd0;
+            margin-bottom: 0.6rem;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+        }
+
+        .hero .sub {
+            font-size: 1.1rem;
+            color: #b7aa97;
+            letter-spacing: 3px;
+            font-weight: 300;
+            border-top: 1px solid #4a4238;
+            display: inline-block;
+            padding-top: 0.8rem;
+            margin-top: 0.2rem;
+        }
+
+        /* 浅色正文区容器 */
+        .container {
+            max-width: 820px;
+            margin: 0 auto;
+            padding: 2rem 1.8rem 4rem;
+        }
+
+        /* 三段介绍卡片质感 */
+        .intro-block {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 2rem 2.2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04), 0 2px 6px rgba(0, 0, 0, 0.02);
+            transition: box-shadow 0.2s ease;
+        }
+
+        .intro-block:hover {
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.06);
+        }
+
+        .intro-block h2 {
+            font-size: 1.6rem;
+            font-weight: 450;
+            color: #252220;
+            margin-bottom: 0.8rem;
+            border-left: 5px solid #c9a46c;
+            padding-left: 1rem;
+        }
+
+        .intro-block p {
+            margin-bottom: 1.1rem;
+            color: #3d3833;
+        }
+
+        .intro-block p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* 强调色链接 */
+        a {
+            color: #9b7b4e;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s, color 0.2s;
+        }
+
+        a:hover {
+            color: #7d623c;
+            border-bottom: 1px solid #c9a46c;
+        }
+
+        /* 背景说明卡片（偏温和） */
+        .bg-note {
+            background: #f1ece4;
+            border-radius: 18px;
+            padding: 1.6rem 2rem;
+            margin-bottom: 2rem;
+            border: 1px solid #e2d7ca;
+        }
+
+        .bg-note p {
+            font-style: normal;
+            color: #4f4740;
+        }
+
+        .bg-note strong {
+            color: #2a2722;
+            font-weight: 550;
+        }
+
+        /* 页尾访问提示 */
+        .visit-prompt {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 2rem 2.2rem;
+            margin-top: 1rem;
+            text-align: center;
+            border: 1px solid #e1d6ca;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+        }
+
+        .visit-prompt p {
+            font-size: 1.1rem;
+            color: #38332d;
+            margin-bottom: 0.3rem;
+        }
+
+        .visit-prompt .small-note {
+            font-size: 0.9rem;
+            color: #797066;
+            margin-top: 0.3rem;
+        }
+
+        .footer-meta {
+            margin-top: 3.2rem;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #958b80;
+            border-top: 1px solid #ddd5cb;
+            padding-top: 1.8rem;
+        }
+
+        .footer-meta span {
+            display: inline-block;
+            margin: 0 0.5rem;
+        }
+
+        /* 响应式细节 */
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            .hero .sub {
+                font-size: 0.95rem;
+            }
+            .container {
+                padding: 1.5rem 1rem 3rem;
+            }
+            .intro-block {
+                padding: 1.5rem 1.2rem;
+            }
+            .intro-block h2 {
+                font-size: 1.3rem;
+            }
+            .bg-note {
+                padding: 1.2rem 1.2rem;
+            }
+            .visit-prompt {
+                padding: 1.5rem 1rem;
+            }
+        }
+
+        @media (max-width: 430px) {
+            .hero {
+                padding: 3rem 1rem 2.5rem;
+            }
+            .hero h1 {
+                font-size: 1.8rem;
+                letter-spacing: 1px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 深色头图横幅 -->
+    <header class="hero">
+        <h1>再访 · 收藏一种节奏</h1>
+        <div class="sub">wd188  ·  轻翻书页般自然</div>
+    </header>
+
+    <div class="container">
+
+        <!-- 背景说明（杂志风格） -->
+        <div class="bg-note">
+            <p><strong>从访客到常客。</strong> 许多人第一次来到 <a href="https://m-wd188.com">wd188</a> 是因为偶然，但真正让它留在收藏夹里的，是那种不喧哗、不追赶的舒适感。它不像一个需要定时刷新的信息流，而更像一本你记得放在桌角的杂志——你知道它在那里，安静且持续。</p>
+        </div>
+
+        <!-- 三段自然介绍，以“再次访问、收藏、持续关注”展开 -->
+        <div class="intro-block">
+            <h2>再次打开，如同翻到折页</h2>
+            <p>浏览器收藏夹里总有那么几个站点，你隔几周就会点开，不是为了寻找什么新东西，而是想看看它还在不在、有没有变化。<a href="https://m-wd188.com">wd188</a> 就是这类存在。每次重新访问，界面依旧利落，内容保持着一种平实的充实感，没有冗余的弹出或催促。这种“保持原样但又稳定更新”的微妙平衡，让回访变成一种放松，而不是任务。</p>
+            <p>页面加载的速度、文字排版的呼吸感、链接的安放位置——这些细节决定了你是否愿意再次输入那串地址。而它做到了让人记住，而不是让人记起。</p>
+        </div>
+
+        <div class="intro-block">
+            <h2>收藏夹里的稳妥位置</h2>
+            <p>在信息过载的年代，“收藏”意味着一种信任投票。把 <a href="https://m-wd188.com">wd188</a> 放进书签栏，不是因为它许诺了什么独家资源，而是因为它提供了一种连贯的阅读体验：没有刺眼的广告墙，没有“猜你喜欢”的算法绑架，只有经过筛选的内容和干净的版面。它更像一个编辑精选的迷你档案，适合那些想要快速进入状态、不被分心的浏览者。</p>
+            <p>我习惯把它放在书签工具栏的第二个文件夹里，和几个常读的博客放在一起。每次点开，都像推开一扇熟悉的门——里面的陈设略有变化，但气息始终对。</p>
+        </div>
+
+        <div class="intro-block">
+            <h2>持续关注，缓慢积累</h2>
+            <p>持续关注一个站点，本质上是在关注它的“分寸感”。<a href="https://m-wd188.com">wd188</a> 并不追求日更五篇的密度，而是用稳定的频率输出经得起看的文字和信息。这种节奏恰好适合那些不想被推送淹没、但仍希望保持信息触达的人。它不会在你的通知栏里频繁跳动，但当你主动想起它时，总能找到值得停留的内容。</p>
+            <p>有时候，最好的关注就是偶尔想起，然后发现它还在那里，而且比上次更好了一点。没有歇斯底里的更新提示，只有细水长流的陪伴感。</p>
+        </div>
+
+        <!-- 页尾访问提示 + FAQ 摘要风格 -->
+        <div class="visit-prompt">
+            <p>◈ 如果你还没把它加入书签，现在可以试试：<a href="https://m-wd188.com">wd188</a> ◈</p>
+            <p class="small-note">「收藏」这个词在浏览器里只是一个点击，但在这里，它更像一种默契。</p>
+            <p class="small-note" style="margin-top:0.6rem;">常见问题摘要：内容多久更新？保持自己的节奏，不刷屏。是否需要注册？不需要，打开即用。</p>
+        </div>
+
+        <!-- 页脚分隔 -->
+        <div class="footer-meta">
+            <span>杂志式索引 · 再访</span>
+            <span>|</span>
+            <span>持续翻页，而非刷新</span>
+        </div>
+
+    </div>
+</body>
+</html>
